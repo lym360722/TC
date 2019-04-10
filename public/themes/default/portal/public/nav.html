@@ -1,0 +1,38 @@
+<div class="layui-container">
+    <!-- 公司logo -->
+    <div class="nav-logo">
+        <a href="__ROOT__">
+            <!--公司Logo 判断是文字还是图片-->
+
+                <empty name="$theme_vars.logo">
+                        <span style="font-size: 50px">{$theme_vars.site_name}</span>
+                    <else/>
+                        <img src="{$theme_vars.logo|cmf_get_image_url}" alt="金联智能" width="180" height="70" />
+                </empty>
+
+            <!--end-->
+        </a>
+    </div>
+    <div class="nav-list">
+        <button>
+            <span></span><span></span><span></span>
+        </button>
+
+        <!--导航栏开始-->
+
+            <navigation nav-id="1" root="ul" id="main-navigation" class="layui-nav" lay-filter="">
+                <navigationMenu root="li" class="layui-nav-item">
+                    <a href="{$menu.href|default=''}" target="{$menu.target|default=''}">{$menu.name|default=''}</a>
+                </navigationMenu>
+                <navigationFolder root="li" class="layui-nav-item" dropdown="ul"
+                                  dropdown-class="dropdown-menu dropdown-menu-level-{$level}">
+                    <a href="#" class="dropdown-toggle dropdown-toggle-{$level}" data-toggle="dropdown">
+                        {$menu.name|default=''}<span class="caret"></span>
+                    </a>
+                </navigationFolder>
+            </navigation>
+
+        <!--导航栏结束-->
+
+    </div>
+</div>

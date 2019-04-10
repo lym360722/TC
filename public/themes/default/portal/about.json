@@ -1,0 +1,52 @@
+{
+  "name": "关于我们页",
+  "action": "portal/News/index",
+  "description": "关于我们页模板文件",
+  "order": 11.0,
+  "more": {
+    "widgets": {
+      "company_profile": {
+        "title": "公司简介",
+        "name": "all_widget",
+        "display": "1",
+        "vars": {
+          "category": {
+            "title": "文章分类",
+            "value": "",
+            "type": "text",
+            "tip": "请选择文章分类！",
+            "placeholder": "请选择文章分类",
+            "dataSource": {
+              "api": "portal/Category/index",
+              "multi": false
+            },
+            "rule": {
+              "require": true
+            }
+          }
+        }
+      },
+      "development_history": {
+        "title": "发展历程",
+        "name": "all_widget",
+        "display": "1",
+        "vars": {
+          "category": {
+            "title": "文章分类",
+            "value": "",
+            "type": "text",
+            "tip": "请选择文章分类！",
+            "placeholder": "请选择文章分类",
+            "dataSource": {
+              "api": "portal/Category/index",
+              "multi": false
+            },
+            "rule": {
+              "require": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

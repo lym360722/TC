@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <include file="public/head" />
+    </head>
+    <body>
+        <!-- nav部分 -->
+        <div class="nav index">
+            <include file="public/nav" />
+        </div>
+
+        <!--内容部分-->
+        <block name="body">
+
+        </block>
+
+        <!-- footer部分 -->
+        <div class="footer">
+            <include file="public/footer" />
+        </div>
+        <ul class="layui-fixbar">
+            <li class="layui-icon layui-fixbar-top" lay-type="top" style="display: list-item;"></li>
+        </ul>
+        <include file="public/script" />
+
+    </body>
+    <script>
+        layui.use('util', function(){
+            var util = layui.util;
+
+            //执行
+            util.fixbar({
+                top: true,
+                click: function (type) {
+                    console.log(type);
+                    if (type === 'top') {
+                        alert('点击了top')
+                    }
+                }
+            });
+        });
+    </script>
+</html>

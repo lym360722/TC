@@ -1,0 +1,87 @@
+    <extend name="public/base" />
+    <block name="body">
+        <!-- banner部分 -->
+        <div>
+            <div class="layui-carousel" id="banner">
+                <div carousel-item>
+
+                    <!--幻灯片循环start-->
+
+                        <slides id="$theme_vars['top_slide']">
+                            <li>
+                                <img src="{$vo.image|cmf_get_image_url}" alt="">
+                                <div class="panel">
+                                    <p class="title">{$vo.title}</p>
+                                    <p>{$vo.description}</p>
+                                </div>
+                            </li>
+                            <noslides id="$theme_vars['top_slide']">
+                                <li>你还没有创建幻灯片;</li>
+                            </noslides>
+                        </slides>
+
+
+                    <!--幻灯片循环end-->
+
+                </div>
+            </div>
+        </div>
+        <!-- main部分 -->
+        <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
+        <taglib name="app\portal\taglib\Portal"/>
+        <widget name="first_section">
+            <div class="main-product">
+                <div class="layui-container">
+                    <php>
+                        $title = explode('|',$widget['title']);
+                    </php>
+                    <p class="title">{$title[0]}<span>{$title[1]}</span></p>
+                    <div class="layui-row layui-col-space25">
+                        <!--start-->
+                        <portal:subCategories categoryId="$widget.vars.category" item="vo">
+                            <div class="layui-col-sm6 layui-col-md3">
+                                <div class="content">
+                                    <div><img src="{$vo.more.thumbnail|cmf_get_image_url}"></div>
+                                    <div>
+                                        <p class="label">{$vo.name}</p>
+                                        <p>{$vo.description}</p>
+                                    </div>
+                                    <a href="../Portal/Product_detail?id={$vo.id}">查看产品</a>
+                                </div>
+                            </div>
+                        </portal:subCategories>
+                        <!--end-->
+                    </div>
+                </div>
+            </div>
+        </widget>
+        <widget name="lower_part">
+            <div class="main-service">
+                <div class="layui-container">
+                    <php>
+                        $title = explode('|',$widget['title']);
+                    </php>
+                    <p class="title">{$title[0]}<span>{$title[1]}</span></p>
+                    <div class="layui-row layui-col-space25 layui-col-space80">
+                        <!--start-->
+                        <portal:articles order="id" categoryIds="$widget.vars.category">
+                            <div class="layui-col-sm6">
+                                <div class="content">
+                                    <div class="content-left"><img src="{$vo.more.thumbnail|cmf_get_image_url}"></div>
+                                    <div class="content-right">
+                                        <p class="label">{$vo.post_title}</p>
+                                        <span></span>
+                                        <p>{$vo.post_excerpt}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </portal:articles>
+                    </div>
+                    <div style="height: 80px;"></div>
+                    <!--<div class="service-more"><a href="">查看更多</a></div>-->
+                </div>
+            </div>
+        </widget>
+    </block>
+
+

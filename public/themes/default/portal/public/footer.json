@@ -1,0 +1,25 @@
+{
+  "name": "底部",
+  "action": "public/Footer",
+  "description": "底部模板文件",
+  "is_public" : "1",
+  "order": 15.0,
+  "more": {
+    "vars": {
+      "bottom_slide": {
+        "title": "底部幻灯片",
+        "value": "1",
+        "type": "text",
+        "dataSource": {
+          "api": "admin/Slide/index",
+          "multi": false
+        },
+        "placeholder": "请选择底部幻灯片",
+        "tip": "底部幻灯片",
+        "rule": {
+          "require": true
+        }
+      }
+    }
+  }
+}

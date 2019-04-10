@@ -1,0 +1,57 @@
+<extend name="public/base" />
+<block name="body">
+  <!-- banner部分 -->
+  <div class="banner news">
+    <div class="title">
+      <p>实时新闻</p>
+      <p class="en">Real-time News</p>
+    </div>
+  </div>
+  <!-- main -->
+
+  <taglib name="app\portal\taglib\Portal"/>
+  <widget name="news_conetent">
+    <div class="main-news">
+      <div class="layui-container">
+          <div class="layui-row layui-col-space20">
+            <!--start-->
+            <php>
+                $page=[
+                    'list_rows'=>8,
+                    'next'=>'下一页',
+                    'prev'=>'上一页'
+                ];
+            </php>
+            <portal:articles limit="6" order="id" categoryIds="$widget.vars.category" page="$page">
+            <div class="layui-col-lg6 content">
+              <div>
+                <div class="news-img"><a href="../Portal/news_detail?id={$vo.id}&cid={$widget.vars.category}"><img src="{$vo.more.thumbnail|cmf_get_image_url}"></a></div><div class="news-panel">
+                  <strong><a href="../Portal/news_detail?id={$vo.id}&cid={$widget.vars.category}">{$vo.post_title}</a></strong>
+                  <p class="detail"><span>{$vo.post_excerpt}</span><a href="../Portal/news_detail?id={$vo.id}&cid={$widget.vars.category}">[详细]</a></p>
+                 <p class="read-push"> <!--阅读 <span>120</span>&nbsp;&nbsp;&nbsp;&nbsp;-->发布时间：<span>{$vo.published_time|date='Y-m-d'}</span>&nbsp&nbsp<span>分类：</span><span>{$widget.title}</span></p>
+                </div>
+              </div>
+            </div>
+            </portal:articles>
+            <widget name="news_coneten">
+              <!--start-->
+              <portal:articles limit="6" order="id" categoryIds="$widget.vars.category" page="$page">
+                <div class="layui-col-lg6 content">
+                  <div>
+                    <div class="news-img"><a href="../Portal/news_detail?id={$vo.id}&cid={$widget.vars.category}"><img src="{$vo.more.thumbnail|cmf_get_image_url}"></a></div><div class="news-panel">
+                    <strong><a href="../Portal/news_detail?id={$vo.id}&cid={$widget.vars.category}">{$vo.post_title}</a></strong>
+                    <p class="detail"><span>{$vo.post_excerpt}</span><a href="../Portal/news_detail?id={$vo.id}&cid={$widget.vars.category}">[详细]</a></p>
+                    <p class="read-push"><!--阅读 <span>120</span>&nbsp;&nbsp;&nbsp;&nbsp;-->发布时间：<span>{$vo.published_time|date='Y-m-d'}</span>&nbsp&nbsp<span>分类：</span><span>{$widget.title}</span></p>
+                  </div>
+                  </div>
+                </div>
+              </portal:articles>
+            </widget>
+          </div>
+        <div class="pagination">
+            <page/>
+        </div>
+      </div>
+    </div>
+  </widget>
+</block>

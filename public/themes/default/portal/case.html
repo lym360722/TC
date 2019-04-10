@@ -1,0 +1,37 @@
+<extend name="public/base" />
+<block name="body">
+  <!-- banner部分 -->
+  <div class="banner case">
+    <div class="title">
+      <p>成功案例</p>
+      <p class="en">Successful Case</p>
+    </div>
+  </div>
+  <!-- main部分 -->
+  <taglib name="app\portal\taglib\Portal"/>
+  <widget name="case_conetent">
+    <div class="main-case">
+      <div class="layui-container">
+        <div class="layui-row">
+          <php>
+              $page=[
+                  'list_rows'=>6,
+                  'next'=>'下一页',
+                  'prev'=>'上一页'
+              ];
+          </php>
+          <portal:articles limit="4" order="id" categoryIds="$widget.vars.category" page="$page">
+            <div class="layui-inline content">
+              <div class="layui-inline case-img"><img src="{$vo.more.thumbnail|cmf_get_image_url}"></div>
+              <p class="lable">{$vo.post_title}</p>
+              <p>{$vo.post_excerpt}</p>
+            </div>
+          </portal:articles>
+        </div>
+        <div class="pagination">
+            <page/>
+        </div>
+      </div>
+    </div>
+  </widget>
+</block>

@@ -1,0 +1,31 @@
+<extend name="public/base" />
+<block name="body">
+  <!-- banner部分 -->
+  <div class="banner product">
+    <div class="title">
+      <p>产品详情</p>
+      <p class="en">Product Display</p>
+    </div>
+  </div>
+  <!-- main部分 -->
+  <div class="main product">
+    <div class="layui-container">
+      <taglib name="app\portal\taglib\Portal"/>
+     
+          <portal:articles limit="5" order="post.published_time DESC" categoryIds="$categoryId">
+            <div class="content layui-row">
+              <div class="layui-col-xs12 layui-col-sm6 layui-col-md7 layui-col-lg6 content-img">
+                <img src="{$vo.more.photos[0]['url']|cmf_get_image_url}" width="260px" height="260px">
+              </div>
+              <div class="layui-col-xs12 layui-col-sm6 layui-col-md5 layui-col-lg6 right">
+                <p class="label">{$vo.post_title}</p>
+                <p class="detail">{$vo.post_content}</p>
+                <!-- <br /><br />
+                <div><a href="../Portal/Product_detail?id={$vo.id}">查看产品详情 ></a></div> -->
+              </div>
+            </div>
+          </portal:articles>
+        
+    </div>
+  </div>
+</block>

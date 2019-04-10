@@ -1,0 +1,21 @@
+{
+  "name": "首页头部信息",
+  "action": "public/Head",
+  "description": "首页模板文件",
+  "is_public": "1",
+  "order": 4.0,
+  "more": {
+    "vars": {
+      "name": {
+        "title": "网站名称",
+        "value": "",
+        "type": "text",
+        "placeholder": "请填写网站名称",
+        "tip": "设置后您的网站名称将会显示在首页",
+        "rule": {
+          "require": true
+        }
+      }
+    }
+  }
+}

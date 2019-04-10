@@ -1,0 +1,31 @@
+{
+  "name": "产品页",
+  "action": "portal/Porduct/index",
+  "description": "产品页模板文件",
+  "order": 7.0,
+  "more": {
+    "widgets": {
+      "first_section": {
+        "title": "专为消防安全而研制的|核心产品",
+        "name": "all_widget",
+        "display": "1",
+        "vars": {
+          "category": {
+            "title": "文章分类",
+            "value": "",
+            "type": "text",
+            "tip": "请选择文章分类！",
+            "placeholder": "请选择文章分类",
+            "dataSource": {
+              "api": "portal/Category/index",
+              "multi": false
+            },
+            "rule": {
+              "require": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

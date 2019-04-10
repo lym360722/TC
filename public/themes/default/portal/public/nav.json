@@ -1,0 +1,27 @@
+{
+  "name": "导航栏信息",
+  "action": "public/Nav",
+  "description": "导航栏内容",
+  "is_public": "1",
+  "order": 5.0,
+  "more": {
+      "vars": {
+          "logo": {
+              "title": "公司Logo",
+              "name": "logo",
+              "value": "",
+              "type" : "image",
+              "tip"  : "请选择Logo图片，建议图片底色为白色(.jpg)或透明(.png)",
+              "rule": []
+          },
+          "site_name": {
+            "title": "网站名称",
+            "name" : "site_name",
+            "value": "",
+            "type" : "text",
+            "tip"  : "请输入您的公司名称！建议以图片logo形式为主！",
+            "rule": []
+          }
+      }
+  }
+}
