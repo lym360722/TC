@@ -18,26 +18,30 @@
         <div class="footer">
             <include file="public/footer" />
         </div>
-        <ul class="layui-fixbar">
-            <li class="layui-icon layui-fixbar-top" lay-type="top" style="display: list-item;"></li>
-        </ul>
+
         <include file="public/script" />
 
     </body>
-    <script>
-        layui.use('util', function(){
-            var util = layui.util;
+    <script src="__TMPL__/portal/res/static/jquery-3.2.1.js"></script>
+    <!--toTop-->
+    <script type="text/javascript">
+        var backToTopEle = $('<ul class="layui-fixbar">\n' +
+            '            <li class="layui-icon layui-fixbar-top" lay-type="top" style="display: list-item;"></li>\n' +
+            '        </ul>').appendTo($("body")).click(function() {
+            $("html, body").animate({ scrollTop: 0 }, 120);
+        });
+        var backToTopFun = function() {
+            var st = $(document).scrollTop(),
+                winh = $(window).height();
+            (st > 0) ? backToTopEle.show(): backToTopEle.hide();
+            if(!window.XMLHttpRequest) {
+                backToTopEle.css("top", st + winh - 166);
+            }
+        };
 
-            //执行
-            util.fixbar({
-                top: true,
-                click: function (type) {
-                    console.log(type);
-                    if (type === 'top') {
-                        alert('点击了top')
-                    }
-                }
-            });
+        $(function() {
+            $(window).on("scroll", backToTopFun);
+            backToTopFun();
         });
     </script>
 </html>

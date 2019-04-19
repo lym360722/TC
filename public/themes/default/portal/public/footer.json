@@ -19,6 +19,56 @@
         "rule": {
           "require": true
         }
+      },
+      "mobile": {
+        "title": "企业电话",
+        "value": "",
+        "type": "text",
+        "placeholder": "请填写企业电话",
+        "tip": "设置后您的企业电话将会显示在底部",
+        "rule": {
+          "require": true
+        }
+      },
+      "email": {
+        "title": "企业邮箱",
+        "value": "",
+        "type": "text",
+        "placeholder": "请填写企业邮箱",
+        "tip": "设置后您的企业邮箱将会显示在底部",
+        "rule": {
+          "require": true
+        }
+      },
+      "address": {
+        "title": "企业地址",
+        "value": "",
+        "type": "text",
+        "placeholder": "请填写企业地址",
+        "tip": "设置后您的企业地址将会显示在底部",
+        "rule": {
+          "require": true
+        }
+      },
+      "ICP": {
+        "title": "ICP备",
+        "value": "",
+        "type": "text",
+        "placeholder": "请填写ICP备",
+        "tip": "设置后您的ICP备将会显示在底部",
+        "rule": {
+          "require": true
+        }
+      },
+      "public": {
+        "title": "公安网备",
+        "value": "",
+        "type": "text",
+        "placeholder": "请填写公安网备",
+        "tip": "设置后您的公安网备将会显示在底部",
+        "rule": {
+          "require": true
+        }
       }
     }
   }

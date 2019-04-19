@@ -17,7 +17,7 @@
           <taglib name="app\portal\taglib\Portal"/>
           <widget name="company_profile">
             <div class="tabIntro">
-              <portal:articles limit="4" order="id" categoryIds="$widget.vars.category">
+              <portal:articles limit="4" order="post.published_time DESC" categoryIds="$widget.vars.category">
                 <equal name="$vo.id%2" value="0">
                   <div class="content">
                     <div class="layui-inline img"><img src="{$vo.more.thumbnail|cmf_get_image_url}"></div><div class="layui-inline panel">
@@ -39,7 +39,7 @@
           <div class="tabCour">
             <p class="title">我们的蜕变</p>
             <ul class="timeline">
-              <portal:articles limit="4" order="id" categoryIds="$widget.vars.category">
+              <portal:articles limit="4" order="post.published_time DESC" categoryIds="$widget.vars.category">
                 <equal name="$vo.id%2" value="0">
                   <li class="odd">
                     <div class="cour-img"><img src="{$vo.more.thumbnail|cmf_get_image_url}"></div>

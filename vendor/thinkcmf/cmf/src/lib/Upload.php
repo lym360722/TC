@@ -58,6 +58,7 @@ class Upload
         ];
 
         $arrData = $this->request->param();
+
         if (empty($arrData["filetype"])) {
             $arrData["filetype"] = "image";
         }

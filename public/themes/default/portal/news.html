@@ -22,7 +22,7 @@
                     'prev'=>'上一页'
                 ];
             </php>
-            <portal:articles limit="6" order="id" categoryIds="$widget.vars.category" page="$page">
+            <portal:articles limit="6" order="post.published_time DESC" categoryIds="$widget.vars.category" page="$page">
             <div class="layui-col-lg6 content">
               <div>
                 <div class="news-img"><a href="../Portal/news_detail?id={$vo.id}&cid={$widget.vars.category}"><img src="{$vo.more.thumbnail|cmf_get_image_url}"></a></div><div class="news-panel">
@@ -35,7 +35,7 @@
             </portal:articles>
             <widget name="news_coneten">
               <!--start-->
-              <portal:articles limit="6" order="id" categoryIds="$widget.vars.category" page="$page">
+              <portal:articles limit="6" order="post.published_time DESC" categoryIds="$widget.vars.category" page="$page">
                 <div class="layui-col-lg6 content">
                   <div>
                     <div class="news-img"><a href="../Portal/news_detail?id={$vo.id}&cid={$widget.vars.category}"><img src="{$vo.more.thumbnail|cmf_get_image_url}"></a></div><div class="news-panel">

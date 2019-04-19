@@ -20,7 +20,7 @@
                   'prev'=>'上一页'
               ];
           </php>
-          <portal:articles limit="4" order="id" categoryIds="$widget.vars.category" page="$page">
+          <portal:articles limit="4" order="post.published_time DESC" categoryIds="$widget.vars.category" page="$page">
             <div class="layui-inline content">
               <div class="layui-inline case-img"><img src="{$vo.more.thumbnail|cmf_get_image_url}"></div>
               <p class="lable">{$vo.post_title}</p>

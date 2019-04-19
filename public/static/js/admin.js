@@ -860,6 +860,7 @@ function openUploadDialog(dialog_title, callback, extra_params, multi, filetype,
     filetype   = filetype ? filetype : 'image';
     app        = app ? app : GV.APP;
     var params = '&multi=' + multi + '&filetype=' + filetype + '&app=' + app;
+
     Wind.use("artDialog", "iframeTools", function () {
         art.dialog.open(GV.ROOT + 'user/Asset/webuploader?' + params, {
             title: dialog_title,
@@ -899,7 +900,9 @@ function openUploadDialog(dialog_title, callback, extra_params, multi, filetype,
 function uploadOne(dialog_title, input_selector, filetype, extra_params, app) {
     filetype = filetype ? filetype : 'file';
     openUploadDialog(dialog_title, function (dialog, files) {
+
         $(input_selector).val(files[0].filepath);
+
         $(input_selector + '-preview').attr('href', files[0].preview_url);
 
         $(input_selector + '-name').val(files[0].name);

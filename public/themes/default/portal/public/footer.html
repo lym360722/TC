@@ -26,13 +26,22 @@
             </slides>
             <div class="layui-col-sm6 layui-col-lg10">
                 <div class="layui-row">
-                    <div class="layui-col-sm6 layui-col-md8 layui-col-lg9">
-                        <p class="contact-top"><i class="layui-icon layui-icon-cellphone"></i>&nbsp;400-8888888&nbsp;&nbsp;&nbsp;(9:00-18:00)</p>
-                        <p class="contact-bottom"><i class="layui-icon layui-icon-home"></i>&nbsp;88888888@163.com</span></p>
+                    <div class="layui-col-sm6 layui-col-md8 layui-col-lg6">
+                        <p class="contact-top"><i class="layui-icon layui-icon-cellphone"></i>{$theme_vars.mobile|default=''}(9:00-18:00)</p>
+                        <p class="contact-bottom"><i class="layui-icon layui-icon-home"></i>{$theme_vars.email|default=''}</span></p>
                     </div>
-                    <div class="layui-col-sm6 layui-col-md4 layui-col-lg3">
-                        <p class="contact-top"><span class="right">广东省深圳市福田区滨河大道5003号爱地大厦东座15楼</span></p>
-                        <p class="contact-bottom"><span class="right">Copyright&nbsp;©&nbsp;2016-2018 More Templates <a href="__ROOT__" target="_blank" title="金联智能">金联智能</a> - Collect from <a href="__ROOT__" title="金联智能" target="_blank">金联智能</a></span></p>
+                    <div class="layui-col-sm6 layui-col-md6 layui-col-lg6">
+                        <p class="contact-top">
+                            <span class="right">{$theme_vars.address|default=''}</span>
+                        </p>
+                        <p class="contact-bottom">
+                            <span class="right">
+                                ICP备：{$theme_vars.ICP|default=''}公安网备：{$theme_vars.public|default=''}
+                                <a href="__ROOT__" target="_blank" title="{$theme_vars.name|default=''}">{$theme_vars.name|default=''}</a>
+                                - Collect from
+                                <a href="__ROOT__" title="{$theme_vars.name|default=''}" target="_blank">{$theme_vars.name|default=''}</a>
+                            </span>
+                        </p>
                     </div>
                 </div>
             </div>

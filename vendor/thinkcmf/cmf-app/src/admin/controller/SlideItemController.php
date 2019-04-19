@@ -92,6 +92,7 @@ class SlideItemController extends AdminBaseController
     public function addPost()
     {
         $data = $this->request->param();
+        var_dump($data);
         Db::name('slideItem')->insert($data['post']);
         $this->success("添加成功！", url("slideItem/index", ['slide_id' => $data['post']['slide_id']]));
     }
