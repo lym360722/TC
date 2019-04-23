@@ -1,12 +1,14 @@
 <extend name="public/base" />
 <block name="body">
   <!-- banner部分 -->
-  <div class="banner about">
-    <div class="title">
-      <p>关于我们</p>
-      <p class="en">About Us</p>
+  <slides id="$theme_vars['top_slide']">
+    <div class="banner about" style="background:url({$vo.image|cmf_get_image_url}) no-repeat center top;background-size: cover;">
+      <div class="title">
+        <p>{$vo.title}</p>
+        <p class="en">{$vo.description}</p>
+      </div>
     </div>
-  </div>
+  </slides>
     <!-- main部分 -->
     <div class="main-about">
       <div class="layui-container">

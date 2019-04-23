@@ -1,0 +1,24 @@
+{
+  "name": "新闻详情页",
+  "action": "portal/Index/index",
+  "description": "新闻详情模板文件",
+  "order": 12.0,
+  "more": {
+    "vars": {
+      "top_slide": {
+        "title": "新闻详情幻灯片",
+        "value": "1",
+        "type": "text",
+        "dataSource": {
+          "api": "admin/Slide/index",
+          "multi": false
+        },
+        "placeholder": "请选择新闻详情幻灯片",
+        "tip": "新闻详情幻灯片",
+        "rule": {
+          "require": true
+        }
+      }
+    }
+  }
+}

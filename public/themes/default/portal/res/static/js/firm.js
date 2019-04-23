@@ -30,6 +30,10 @@ layui.define(['jquery', 'element', 'carousel', 'laypage'], function(exports){
   $(function(){
     $('.banner').children('.title').addClass('active');
   })
+    //轮播文字
+  $(function(){
+    $('.newsdate').children('.title').addClass('active');
+  })
 
   //导航切换
   var btn = $('.nav').find('.nav-list').children('button')

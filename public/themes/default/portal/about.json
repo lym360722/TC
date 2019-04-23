@@ -47,6 +47,22 @@
           }
         }
       }
+    },
+    "vars": {
+      "top_slide": {
+        "title": "关于幻灯片",
+        "value": "1",
+        "type": "text",
+        "dataSource": {
+          "api": "admin/Slide/index",
+          "multi": false
+        },
+        "placeholder": "请选择关于幻灯片",
+        "tip": "关于幻灯片",
+        "rule": {
+          "require": true
+        }
+      }
     }
   }
 }

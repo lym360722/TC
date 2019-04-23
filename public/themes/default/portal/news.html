@@ -1,12 +1,14 @@
 <extend name="public/base" />
 <block name="body">
-  <!-- banner部分 -->
-  <div class="banner news">
-    <div class="title">
-      <p>实时新闻</p>
-      <p class="en">Real-time News</p>
+    <!-- banner部分 -->
+  <slides id="$theme_vars['top_slide']">
+    <div class="banner news" style="background:url({$vo.image|cmf_get_image_url}) no-repeat center top;background-size: cover;">
+      <div class="title">
+        <p>{$vo.title}</p>
+        <p class="en">{$vo.description}</p>
+      </div>
     </div>
-  </div>
+  </slides>
   <!-- main -->
 
   <taglib name="app\portal\taglib\Portal"/>

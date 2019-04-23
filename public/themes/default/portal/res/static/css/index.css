@@ -109,7 +109,14 @@ body{background: #FFF;}
 .main-news .content .news-panel p.read-push{color: #AAA; padding-top: 5px;}
 .main-news #newsPage .layui-laypage{display: block; text-align: center; margin-top: 70px;}
 .main-news #newsPage .layui-laypage a,.main-news #newsPage .layui-laypage span{font-size: 18px; line-height: 40px; height: 40px; margin-right: 20px; border-radius: 3px; color: #e3e3e3;}
+
+
 /*动态详情页*/
+.newsdate{height: 320px; margin-top: 80px;}
+.newsdate .title{padding-top: 170px;}
+.newsdate .title.active{padding-top: 120px; transition: 1.5s;}
+.newsdate .title p{color: #606060; font-size: 36px; text-align: center; line-height: 50px; letter-spacing: 5px;}
+.newsdate .title p.en{font-size: 20px; letter-spacing: 3px;}
 .main-newsdate{margin-top: 80px; text-align: center;}
 .main-newsdate .news{text-align: left; line-height: 104px;}
 .main-newsdate h1{padding-top: 6px;}
@@ -228,7 +235,7 @@ body{background: #FFF;}
   .main.product .content div.right{padding-left: 0;}
   .main-news .content .news-img{width: 20%;}
   .main-news .content .news-panel{width: 80%;}
-  .main-case .content{width: 31%;}
+  .main-case .content{width: 25%; padding: 50px}
   .main-case .content.even{margin-left: 0;}
   .main-case .content.center{margin-right: 3%; margin-left: 3%;}
   .main-about .tabIntro .content p{padding: 0 50px; font-size: 20px; line-height: 40px;}
@@ -243,7 +250,7 @@ body{background: #FFF;}
   .main-about .tabCour .timeline li.odd .cour-panel{padding-left: 0; padding-right: 50px;}
 }
 @media screen and (min-width: 1300px) {
-  .layui-container{width: 1200px; padding: 0;}
+  .layui-container{width: 75%; padding: 0;}
   .main-about .tabJob .content:last-child{margin-bottom: 180px;}
   .nav .nav-logo{position: absolute; top: 0; left: 0;}
   .layui-col-space80{margin: -40px;}

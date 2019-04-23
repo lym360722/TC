@@ -26,6 +26,22 @@
           }   
         }
       }
+    },
+    "vars": {
+      "top_slide": {
+        "title": "案例幻灯片",
+        "value": "1",
+        "type": "text",
+        "dataSource": {
+          "api": "admin/Slide/index",
+          "multi": false
+        },
+        "placeholder": "请选择案例幻灯片",
+        "tip": "案例幻灯片",
+        "rule": {
+          "require": true
+        }
+      }
     }
   }
 }

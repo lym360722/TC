@@ -26,6 +26,22 @@
           }
         }
       }
+    },
+    "vars": {
+      "top_slide": {
+        "title": "产品幻灯片",
+        "value": "1",
+        "type": "text",
+        "dataSource": {
+          "api": "admin/Slide/index",
+          "multi": false
+        },
+        "placeholder": "请选择产品幻灯片",
+        "tip": "产品幻灯片",
+        "rule": {
+          "require": true
+        }
+      }
     }
   }
 }
