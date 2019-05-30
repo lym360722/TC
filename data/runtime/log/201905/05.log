@@ -1,0 +1,958 @@
+---------------------------------------------------------------
+[2019-05-05T17:42:47+08:00] 192.168.19.50 GET 192.168.19.50/
+[运行时间：1.583091s] [吞吐率：0.63req/s] [内存消耗：1,516.84kb] [文件加载：104]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\app\portal\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\home.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\webs\tc.com\public/themes/default/portal\\index.html [ array (
+  0 => 'site_info',
+  1 => 'theme_vars',
+  2 => 'theme_widgets',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=127.0.0.1;port=3306;dbname=tc;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_theme_file` [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'default'  AND `file` = 'portal/about' LIMIT 1 [ RunTime:0.014001s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_theme_file',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme` = 'default' , `action` = 'portal/News/index' , `file` = 'portal/about' , `name` = '关于我们页' , `more` = '{\"widgets\":{\"company_profile\":{\"title\":\"\\u516c\\u53f8\\u7b80\\u4ecb\",\"name\":\"all_widget\",\"display\":1,\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"8\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true},\"valueText\":\"\\u516c\\u53f8\\u7b80\\u4ecb\"}}},\"development_history\":{\"title\":\"\\u53d1\\u5c55\\u5386\\u7a0b\",\"name\":\"all_widget\",\"display\":1,\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"9\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true},\"valueText\":\"\\u53d1\\u5c55\\u5386\\u7a0b\"}}}},\"vars\":{\"top_slide\":{\"title\":\"\\u5173\\u4e8e\\u5e7b\\u706f\\u7247\",\"value\":\"8\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5173\\u4e8e\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u5173\\u4e8e\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true},\"valueText\":\"\\u5173\\u4e8ebanner\"}}}' , `config_more` = '{\"widgets\":{\"company_profile\":{\"title\":\"\\u516c\\u53f8\\u7b80\\u4ecb\",\"name\":\"all_widget\",\"display\":\"1\",\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true}}}},\"development_history\":{\"title\":\"\\u53d1\\u5c55\\u5386\\u7a0b\",\"name\":\"all_widget\",\"display\":\"1\",\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true}}}}},\"vars\":{\"top_slide\":{\"title\":\"\\u5173\\u4e8e\\u5e7b\\u706f\\u7247\",\"value\":\"1\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5173\\u4e8e\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u5173\\u4e8e\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}}}' , `description` = '关于我们页模板文件' , `is_public` = 0 , `list_order` = 11  WHERE  `theme` = 'default'  AND `file` = 'portal/about' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'default'  AND `file` = 'portal/case' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_theme_file',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme` = 'default' , `action` = 'portal/News/index' , `file` = 'portal/case' , `name` = '案例页面' , `more` = '{\"widgets\":{\"case_conetent\":{\"title\":\"\\u6848\\u4f8b\",\"name\":\"all_widget\",\"display\":1,\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"6\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true},\"valueText\":\"\\u6848\\u4f8b\"}}}},\"vars\":{\"top_slide\":{\"title\":\"\\u6848\\u4f8b\\u5e7b\\u706f\\u7247\",\"value\":\"7\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6848\\u4f8b\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u6848\\u4f8b\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true},\"valueText\":\"\\u6848\\u5217banner\"}}}' , `config_more` = '{\"widgets\":{\"case_conetent\":{\"title\":\"\\u6848\\u4f8b\",\"name\":\"all_widget\",\"display\":\"1\",\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true}}}}},\"vars\":{\"top_slide\":{\"title\":\"\\u6848\\u4f8b\\u5e7b\\u706f\\u7247\",\"value\":\"1\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6848\\u4f8b\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u6848\\u4f8b\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}}}' , `description` = '案例页模板文件' , `is_public` = 0 , `list_order` = 10  WHERE  `theme` = 'default'  AND `file` = 'portal/case' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'default'  AND `file` = 'portal/index' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_theme_file',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme` = 'default' , `action` = 'portal/Index/index' , `file` = 'portal/index' , `name` = '首页' , `more` = '{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"1\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true},\"valueText\":\"\\u9996\\u9875\\u9876\\u90e8\\u8f6e\\u64ad\\u56fe\"}},\"widgets\":{\"first_section\":{\"title\":\"\\u4e13\\u4e3a\\u6d88\\u9632\\u5b89\\u5168\\u800c\\u7814\\u5236\\u7684|\\u6838\\u5fc3\\u4ea7\\u54c1\",\"name\":\"all_widget\",\"display\":1,\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"10\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true},\"valueText\":\"\\u4ea7\\u54c1\"}}},\"lower_part\":{\"title\":\"\\u4e3a\\u5ba2\\u6237\\u6253\\u9020\\u5b8c\\u7f8e\\u7684|\\u4e13\\u4e1a\\u670d\\u52a1\",\"name\":\"all_widget\",\"display\":1,\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"2\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true},\"valueText\":\"\\u4e3a\\u5ba2\\u6237\\u6253\\u9020\\u5b8c\\u7f8e\\u7684\\u4e13\\u4e1a\\u670d\\u52a1\"}}}}}' , `config_more` = '{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"1\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}},\"widgets\":{\"first_section\":{\"title\":\"\\u4e13\\u4e3a\\u6d88\\u9632\\u5b89\\u5168\\u800c\\u7814\\u5236\\u7684|\\u6838\\u5fc3\\u4ea7\\u54c1\",\"name\":\"all_widget\",\"display\":\"1\",\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true}}}},\"lower_part\":{\"title\":\"\\u4e3a\\u5ba2\\u6237\\u6253\\u9020\\u5b8c\\u7f8e\\u7684|\\u4e13\\u4e1a\\u670d\\u52a1\",\"name\":\"all_widget\",\"display\":\"2\",\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true}}}}}}' , `description` = '首页模板文件' , `is_public` = 0 , `list_order` = 6  WHERE  `theme` = 'default'  AND `file` = 'portal/index' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'default'  AND `file` = 'portal/news' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_theme_file',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme` = 'default' , `action` = 'portal/News/index' , `file` = 'portal/news' , `name` = '新闻动态页' , `more` = '{\"widgets\":{\"news_conetent\":{\"title\":\"\\u65b0\\u95fb\\u52a8\\u6001\",\"name\":\"all_widget\",\"display\":1,\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"4\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true},\"valueText\":\"\\u884c\\u4e1a\\u52a8\\u6001\"}}},\"news_coneten\":{\"title\":\"\\u516c\\u53f8\\u52a8\\u6001\",\"name\":\"all_widget\",\"display\":1,\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"5\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true},\"valueText\":\"\\u516c\\u53f8\\u52a8\\u6001\"}}}},\"vars\":{\"top_slide\":{\"title\":\"\\u52a8\\u6001\\u5e7b\\u706f\\u7247\",\"value\":\"6\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u52a8\\u6001\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u52a8\\u6001\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true},\"valueText\":\"\\u52a8\\u6001banner\"}}}' , `config_more` = '{\"widgets\":{\"news_conetent\":{\"title\":\"\\u884c\\u4e1a\\u52a8\\u6001\",\"name\":\"all_widget\",\"display\":\"1\",\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true}}}},\"news_coneten\":{\"title\":\"\\u516c\\u53f8\\u52a8\\u6001\",\"name\":\"all_widget\",\"display\":\"1\",\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true}}}}},\"vars\":{\"top_slide\":{\"title\":\"\\u52a8\\u6001\\u5e7b\\u706f\\u7247\",\"value\":\"1\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u52a8\\u6001\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u52a8\\u6001\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}}}' , `description` = '产品页模板文件' , `is_public` = 0 , `list_order` = 8  WHERE  `theme` = 'default'  AND `file` = 'portal/news' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'default'  AND `file` = 'portal/news_detail' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_theme_file',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme` = 'default' , `action` = 'portal/Index/index' , `file` = 'portal/news_detail' , `name` = '新闻详情页' , `more` = '{\"vars\":{\"top_slide\":{\"title\":\"\\u65b0\\u95fb\\u8be6\\u60c5\\u5e7b\\u706f\\u7247\",\"value\":\"4\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u65b0\\u95fb\\u8be6\\u60c5\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u65b0\\u95fb\\u8be6\\u60c5\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true},\"valueText\":\"\\u65b0\\u95fb\\u8be6\\u60c5banner\"}}}' , `config_more` = '{\"vars\":{\"top_slide\":{\"title\":\"\\u65b0\\u95fb\\u8be6\\u60c5\\u5e7b\\u706f\\u7247\",\"value\":\"1\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u65b0\\u95fb\\u8be6\\u60c5\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u65b0\\u95fb\\u8be6\\u60c5\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}}}' , `description` = '新闻详情模板文件' , `is_public` = 0 , `list_order` = 12  WHERE  `theme` = 'default'  AND `file` = 'portal/news_detail' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'default'  AND `file` = 'portal/product' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_theme_file',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme` = 'default' , `action` = 'portal/Porduct/index' , `file` = 'portal/product' , `name` = '产品页' , `more` = '{\"widgets\":{\"first_section\":{\"title\":\"\\u4e13\\u4e3a\\u6d88\\u9632\\u5b89\\u5168\\u800c\\u7814\\u5236\\u7684|\\u6838\\u5fc3\\u4ea7\\u54c1\",\"name\":\"all_widget\",\"display\":1,\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"10\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true},\"valueText\":\"\\u4ea7\\u54c1\"}}}},\"vars\":{\"top_slide\":{\"title\":\"\\u4ea7\\u54c1\\u5e7b\\u706f\\u7247\",\"value\":\"5\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u4ea7\\u54c1\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u4ea7\\u54c1\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true},\"valueText\":\"\\u4ea7\\u54c1banner\"}}}' , `config_more` = '{\"widgets\":{\"first_section\":{\"title\":\"\\u4e13\\u4e3a\\u6d88\\u9632\\u5b89\\u5168\\u800c\\u7814\\u5236\\u7684|\\u6838\\u5fc3\\u4ea7\\u54c1\",\"name\":\"all_widget\",\"display\":\"1\",\"vars\":{\"category\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7b\",\"value\":\"\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\\uff01\",\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u6587\\u7ae0\\u5206\\u7c7b\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":false},\"rule\":{\"require\":true}}}}},\"vars\":{\"top_slide\":{\"title\":\"\\u4ea7\\u54c1\\u5e7b\\u706f\\u7247\",\"value\":\"1\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u4ea7\\u54c1\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u4ea7\\u54c1\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}}}' , `description` = '产品页模板文件' , `is_public` = 0 , `list_order` = 7  WHERE  `theme` = 'default'  AND `file` = 'portal/product' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'default'  AND `file` = 'portal/public/footer' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_theme_file',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme` = 'default' , `action` = 'public/Footer' , `file` = 'portal/public/footer' , `name` = '底部' , `more` = '{\"vars\":{\"bottom_slide\":{\"title\":\"\\u5e95\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"3\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5e95\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u5e95\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true},\"valueText\":\"\\u5e95\\u90e8\\u5e7b\\u706f\\u7247\"},\"mobile\":{\"title\":\"\\u4f01\\u4e1a\\u7535\\u8bdd\",\"value\":\"0755-88888888\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u586b\\u5199\\u4f01\\u4e1a\\u7535\\u8bdd\",\"tip\":\"\\u8bbe\\u7f6e\\u540e\\u60a8\\u7684\\u4f01\\u4e1a\\u7535\\u8bdd\\u5c06\\u4f1a\\u663e\\u793a\\u5728\\u5e95\\u90e8\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u4f01\\u4e1a\\u90ae\\u7bb1\",\"value\":\"88888888@163.com\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u586b\\u5199\\u4f01\\u4e1a\\u90ae\\u7bb1\",\"tip\":\"\\u8bbe\\u7f6e\\u540e\\u60a8\\u7684\\u4f01\\u4e1a\\u90ae\\u7bb1\\u5c06\\u4f1a\\u663e\\u793a\\u5728\\u5e95\\u90e8\",\"rule\":{\"require\":true}},\"address\":{\"title\":\"\\u4f01\\u4e1a\\u5730\\u5740\",\"value\":\"\\u5e7f\\u4e1c\\u7701\\u6df1\\u5733\\u5e02\\u798f\\u7530\\u533a\\u6ee8\\u6cb3\\u5927\\u90535003\\u53f7\\u7231\\u5730\\u5927\\u53a6\\u4e1c\\u5ea715\\u697c\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u586b\\u5199\\u4f01\\u4e1a\\u5730\\u5740\",\"tip\":\"\\u8bbe\\u7f6e\\u540e\\u60a8\\u7684\\u4f01\\u4e1a\\u5730\\u5740\\u5c06\\u4f1a\\u663e\\u793a\\u5728\\u5e95\\u90e8\",\"rule\":{\"require\":true}},\"ICP\":{\"title\":\"ICP\\u5907\",\"value\":\"11111111\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u586b\\u5199ICP\\u5907\",\"tip\":\"\\u8bbe\\u7f6e\\u540e\\u60a8\\u7684ICP\\u5907\\u5c06\\u4f1a\\u663e\\u793a\\u5728\\u5e95\\u90e8\",\"rule\":{\"require\":true}},\"public\":{\"title\":\"\\u516c\\u5b89\\u7f51\\u5907\",\"value\":\"22222222\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u586b\\u5199\\u516c\\u5b89\\u7f51\\u5907\",\"tip\":\"\\u8bbe\\u7f6e\\u540e\\u60a8\\u7684\\u516c\\u5b89\\u7f51\\u5907\\u5c06\\u4f1a\\u663e\\u793a\\u5728\\u5e95\\u90e8\",\"rule\":{\"require\":true}}}}' , `config_more` = '{\"vars\":{\"bottom_slide\":{\"title\":\"\\u5e95\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"1\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5e95\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u5e95\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}},\"mobile\":{\"title\":\"\\u4f01\\u4e1a\\u7535\\u8bdd\",\"value\":\"\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u586b\\u5199\\u4f01\\u4e1a\\u7535\\u8bdd\",\"tip\":\"\\u8bbe\\u7f6e\\u540e\\u60a8\\u7684\\u4f01\\u4e1a\\u7535\\u8bdd\\u5c06\\u4f1a\\u663e\\u793a\\u5728\\u5e95\\u90e8\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u4f01\\u4e1a\\u90ae\\u7bb1\",\"value\":\"\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u586b\\u5199\\u4f01\\u4e1a\\u90ae\\u7bb1\",\"tip\":\"\\u8bbe\\u7f6e\\u540e\\u60a8\\u7684\\u4f01\\u4e1a\\u90ae\\u7bb1\\u5c06\\u4f1a\\u663e\\u793a\\u5728\\u5e95\\u90e8\",\"rule\":{\"require\":true}},\"address\":{\"title\":\"\\u4f01\\u4e1a\\u5730\\u5740\",\"value\":\"\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u586b\\u5199\\u4f01\\u4e1a\\u5730\\u5740\",\"tip\":\"\\u8bbe\\u7f6e\\u540e\\u60a8\\u7684\\u4f01\\u4e1a\\u5730\\u5740\\u5c06\\u4f1a\\u663e\\u793a\\u5728\\u5e95\\u90e8\",\"rule\":{\"require\":true}},\"ICP\":{\"title\":\"ICP\\u5907\",\"value\":\"\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u586b\\u5199ICP\\u5907\",\"tip\":\"\\u8bbe\\u7f6e\\u540e\\u60a8\\u7684ICP\\u5907\\u5c06\\u4f1a\\u663e\\u793a\\u5728\\u5e95\\u90e8\",\"rule\":{\"require\":true}},\"public\":{\"title\":\"\\u516c\\u5b89\\u7f51\\u5907\",\"value\":\"\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u586b\\u5199\\u516c\\u5b89\\u7f51\\u5907\",\"tip\":\"\\u8bbe\\u7f6e\\u540e\\u60a8\\u7684\\u516c\\u5b89\\u7f51\\u5907\\u5c06\\u4f1a\\u663e\\u793a\\u5728\\u5e95\\u90e8\",\"rule\":{\"require\":true}}}}' , `description` = '底部模板文件' , `is_public` = 1 , `list_order` = 15  WHERE  `theme` = 'default'  AND `file` = 'portal/public/footer' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'default'  AND `file` = 'portal/public/head' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_theme_file',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme` = 'default' , `action` = 'public/Head' , `file` = 'portal/public/head' , `name` = '首页头部信息' , `more` = '{\"vars\":{\"name\":{\"title\":\"\\u7f51\\u7ad9\\u540d\\u79f0\",\"value\":\"\\u91d1\\u8054\\u667a\\u80fd\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u586b\\u5199\\u7f51\\u7ad9\\u540d\\u79f0\",\"tip\":\"\\u8bbe\\u7f6e\\u540e\\u60a8\\u7684\\u7f51\\u7ad9\\u540d\\u79f0\\u5c06\\u4f1a\\u663e\\u793a\\u5728\\u9996\\u9875\",\"rule\":{\"require\":true}}}}' , `config_more` = '{\"vars\":{\"name\":{\"title\":\"\\u7f51\\u7ad9\\u540d\\u79f0\",\"value\":\"\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u586b\\u5199\\u7f51\\u7ad9\\u540d\\u79f0\",\"tip\":\"\\u8bbe\\u7f6e\\u540e\\u60a8\\u7684\\u7f51\\u7ad9\\u540d\\u79f0\\u5c06\\u4f1a\\u663e\\u793a\\u5728\\u9996\\u9875\",\"rule\":{\"require\":true}}}}' , `description` = '首页模板文件' , `is_public` = 1 , `list_order` = 4  WHERE  `theme` = 'default'  AND `file` = 'portal/public/head' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'default'  AND `file` = 'portal/public/nav' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_theme_file',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme` = 'default' , `action` = 'public/Nav' , `file` = 'portal/public/nav' , `name` = '导航栏信息' , `more` = '{\"vars\":{\"logo\":{\"title\":\"\\u516c\\u53f8Logo\",\"name\":\"logo\",\"value\":\"default\\/20190402\\/3dc1f286070e42fcc3f93ab812cd1923.png\",\"type\":\"image\",\"tip\":\"\\u8bf7\\u9009\\u62e9Logo\\u56fe\\u7247\\uff0c\\u5efa\\u8bae\\u56fe\\u7247\\u5e95\\u8272\\u4e3a\\u767d\\u8272(.jpg)\\u6216\\u900f\\u660e(.png)\",\"rule\":[]},\"site_name\":{\"title\":\"\\u7f51\\u7ad9\\u540d\\u79f0\",\"name\":\"site_name\",\"value\":\"\\u91d1\\u8054\\u667a\\u80fd\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u8f93\\u5165\\u60a8\\u7684\\u516c\\u53f8\\u540d\\u79f0\\uff01\\u5efa\\u8bae\\u4ee5\\u56fe\\u7247logo\\u5f62\\u5f0f\\u4e3a\\u4e3b\\uff01\",\"rule\":[]}}}' , `config_more` = '{\"vars\":{\"logo\":{\"title\":\"\\u516c\\u53f8Logo\",\"name\":\"logo\",\"value\":\"\",\"type\":\"image\",\"tip\":\"\\u8bf7\\u9009\\u62e9Logo\\u56fe\\u7247\\uff0c\\u5efa\\u8bae\\u56fe\\u7247\\u5e95\\u8272\\u4e3a\\u767d\\u8272(.jpg)\\u6216\\u900f\\u660e(.png)\",\"rule\":[]},\"site_name\":{\"title\":\"\\u7f51\\u7ad9\\u540d\\u79f0\",\"name\":\"site_name\",\"value\":\"\",\"type\":\"text\",\"tip\":\"\\u8bf7\\u8f93\\u5165\\u60a8\\u7684\\u516c\\u53f8\\u540d\\u79f0\\uff01\\u5efa\\u8bae\\u4ee5\\u56fe\\u7247logo\\u5f62\\u5f0f\\u4e3a\\u4e3b\\uff01\",\"rule\":[]}}}' , `description` = '导航栏内容' , `is_public` = 1 , `list_order` = 5  WHERE  `theme` = 'default'  AND `file` = 'portal/public/nav' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'default' [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_theme_file',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_theme` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme`  SET `name` = 'default' , `version` = '1.0.0' , `demo_url` = 'http://demo.thinkcmf.com' , `author` = 'ThinkCMF' , `lang` = 'zh-cn' , `author_url` = 'http://www.thinkcmf.com' , `keywords` = 'ThinkCMF默认模板' , `description` = 'ThinkCMF默认模板'  WHERE  `theme` = 'default' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `cmf_theme_file` WHERE  `theme` = 'default'  AND (  `is_public` = 1 OR `file` = 'portal/index' ) [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_theme_file',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_nav_menu` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_nav_menu` WHERE  `nav_id` = 1  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.026002s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_nav_menu',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 5,
+  'filtered' => 20.0,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_slide` WHERE  `id` = 1  AND `status` = 1  AND `delete_time` = 0 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_slide',
+  'partitions' => NULL,
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'filtered' => 100.0,
+  'extra' => NULL,
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_slide_item` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_slide_item` WHERE  `status` = 1  AND `slide_id` = 1 ORDER BY `list_order` ASC [ RunTime:0.020001s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_slide_item',
+  'partitions' => NULL,
+  'type' => 'ref',
+  'possible_keys' => 'slide_id',
+  'key' => 'slide_id',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 2,
+  'filtered' => 10.0,
+  'extra' => 'Using index condition; Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_category` WHERE  `status` = 1  AND `delete_time` = 0  AND `parent_id` = 10 ORDER BY `list_order` ASC [ RunTime:0.002001s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_portal_category',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 12,
+  'filtered' => 8.333333969116211,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT post.*,min(category_post.category_id) as category_id FROM `cmf_portal_post` `post` INNER JOIN `cmf_portal_category_post` `category_post` ON `post`.`id`=`category_post`.`post_id` WHERE  `post`.`post_status` = '1'  AND `post`.`post_type` = '1'  AND `post`.`delete_time` = '0'  AND (  `category_post`.`category_id` = '2' )  AND ( `post`.`published_time` >  '0' and `post`.`published_time` < '1557049366' ) GROUP BY `post`.`id` ORDER BY `post`.`published_time` DESC LIMIT 10 [ RunTime:0.101005s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'category_post',
+  'partitions' => NULL,
+  'type' => 'ref',
+  'possible_keys' => 'term_taxonomy_id',
+  'key' => 'term_taxonomy_id',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 6,
+  'filtered' => 100.0,
+  'extra' => 'Using index condition; Using temporary; Using filesort',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_link` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_link` WHERE  `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.002000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_link',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => 'status',
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 3,
+  'filtered' => 100.0,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_slide` WHERE  `id` = 3  AND `status` = 1  AND `delete_time` = 0 LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_slide',
+  'partitions' => NULL,
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'filtered' => 100.0,
+  'extra' => NULL,
+) ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_slide_item` WHERE  `status` = 1  AND `slide_id` = 3 ORDER BY `list_order` ASC [ RunTime:0.002000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_slide_item',
+  'partitions' => NULL,
+  'type' => 'ref',
+  'possible_keys' => 'slide_id',
+  'key' => 'slide_id',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 2,
+  'filtered' => 10.0,
+  'extra' => 'Using index condition; Using where; Using filesort',
+) ]
+[ warn ] SQL:SELECT * FROM `cmf_nav_menu` WHERE  `nav_id` = :ThinkBind_1_  AND `status` = :ThinkBind_2_ ORDER BY `list_order` ASC [Using where; Using filesort]
+[ warn ] SQL:SELECT * FROM `cmf_slide_item` WHERE  `status` = :ThinkBind_1_  AND `slide_id` = :ThinkBind_2_ ORDER BY `list_order` ASC [Using index condition; Using where; Using filesort]
+[ warn ] SQL:SELECT * FROM `cmf_portal_category` WHERE  `status` = :ThinkBind_1_  AND `delete_time` = :ThinkBind_2_  AND `parent_id` = :ThinkBind_3_ ORDER BY `list_order` ASC [Using where; Using filesort]
+[ warn ] SQL:SELECT post.*,min(category_post.category_id) as category_id FROM `cmf_portal_post` `post` INNER JOIN `cmf_portal_category_post` `category_post` ON `post`.`id`=`category_post`.`post_id` WHERE  `post`.`post_status` = :ThinkBind_1_  AND `post`.`post_type` = :ThinkBind_2_  AND `post`.`delete_time` = :ThinkBind_3_  AND (  `category_post`.`category_id` = :ThinkBind_4_ )  AND ( `post`.`published_time` >  :ThinkBind_5_ and `post`.`published_time` < :ThinkBind_6_ ) GROUP BY `post`.`id` ORDER BY `post`.`published_time` DESC LIMIT 10  [Using index condition; Using temporary; Using filesort]
+[ warn ] SQL:SELECT * FROM `cmf_link` WHERE  `status` = :ThinkBind_1_ ORDER BY `list_order` ASC [Using where; Using filesort]
+[ warn ] SQL:SELECT * FROM `cmf_slide_item` WHERE  `status` = :ThinkBind_1_  AND `slide_id` = :ThinkBind_2_ ORDER BY `list_order` ASC [Using index condition; Using where; Using filesort]
+---------------------------------------------------------------
+[2019-05-05T17:42:48+08:00] 192.168.19.50 GET 192.168.19.50/favicon.ico
+[运行时间：0.060003s] [吞吐率：16.67req/s] [内存消耗：466.87kb] [文件加载：75]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.19.50/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
+---------------------------------------------------------------
+[2019-05-05T17:42:55+08:00] 192.168.19.50 GET 192.168.19.50/admin
+[运行时间：0.318018s] [吞吐率：3.14req/s] [内存消耗：760.77kb] [文件加载：93]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn/admin_menu.php
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=tc;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_plugin',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+---------------------------------------------------------------
+[2019-05-05T17:42:56+08:00] 192.168.19.50 GET 192.168.19.50/admin/public/login.html
+[运行时间：0.113006s] [吞吐率：8.85req/s] [内存消耗：512.55kb] [文件加载：82]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=sqpihqo6r45708o9sshphuiv4s',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
+[ info ] [ VIEW ] D:\webs\tc.com\public/themes/admin_simpleboot3/admin\\login.html [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-05T17:42:56+08:00] 192.168.19.50 GET 192.168.19.50/new_captcha.html?height=32&width=150&font_size=18
+[运行时间：0.594034s] [吞吐率：1.68req/s] [内存消耗：391.62kb] [文件加载：66]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'new_captcha',
+  'route' => '\\cmf\\controller\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.19.50/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=sqpihqo6r45708o9sshphuiv4s',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
+---------------------------------------------------------------
+[2019-05-05T17:43:06+08:00] 192.168.19.50 POST 192.168.19.50/admin/public/dologin.html
+[运行时间：0.066004s] [吞吐率：15.15req/s] [内存消耗：693.16kb] [文件加载：86]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'content-length' => '65',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://192.168.19.50',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://192.168.19.50/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=sqpihqo6r45708o9sshphuiv4s',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'captcha' => 'dhmm',
+  '_captcha_id' => '',
+  'redirect' => '',
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=tc;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `user_login` = 'admin' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_user',
+  'partitions' => NULL,
+  'type' => 'ref',
+  'possible_keys' => 'user_login',
+  'key' => 'user_login',
+  'key_len' => '242',
+  'ref' => 'const',
+  'rows' => 1,
+  'filtered' => 100.0,
+  'extra' => NULL,
+) ]
+---------------------------------------------------------------
+[2019-05-05T17:43:06+08:00] 192.168.19.50 GET 192.168.19.50/new_captcha.html?height=32&width=150&font_size=18&refresh=0.9798409354777995
+[运行时间：0.017001s] [吞吐率：58.82req/s] [内存消耗：390.40kb] [文件加载：66]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'new_captcha',
+  'route' => '\\cmf\\controller\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.19.50/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=sqpihqo6r45708o9sshphuiv4s',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+  'refresh' => '0.9798409354777995',
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
+---------------------------------------------------------------
+[2019-05-05T17:43:14+08:00] 192.168.19.50 GET 192.168.19.50/new_captcha.html?height=32&width=150&font_size=18&time=0.9763685607999644
+[运行时间：0.024001s] [吞吐率：41.66req/s] [内存消耗：390.52kb] [文件加载：66]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'new_captcha',
+  'route' => '\\cmf\\controller\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.19.50/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=sqpihqo6r45708o9sshphuiv4s',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+  'time' => '0.9763685607999644',
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
+---------------------------------------------------------------
+[2019-05-05T17:43:16+08:00] 192.168.19.50 GET 192.168.19.50/new_captcha.html?height=32&width=150&font_size=18&time=0.1294404838554688
+[运行时间：0.019001s] [吞吐率：52.63req/s] [内存消耗：390.52kb] [文件加载：66]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'new_captcha',
+  'route' => '\\cmf\\controller\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.19.50/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=sqpihqo6r45708o9sshphuiv4s',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+  'time' => '0.1294404838554688',
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
+---------------------------------------------------------------
+[2019-05-05T17:43:17+08:00] 192.168.19.50 GET 192.168.19.50/new_captcha.html?height=32&width=150&font_size=18&time=0.8209099512368663
+[运行时间：0.039002s] [吞吐率：25.64req/s] [内存消耗：390.52kb] [文件加载：66]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'new_captcha',
+  'route' => '\\cmf\\controller\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.19.50/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=sqpihqo6r45708o9sshphuiv4s',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+  'time' => '0.8209099512368663',
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
+---------------------------------------------------------------
+[2019-05-05T17:43:23+08:00] 192.168.19.50 POST 192.168.19.50/admin/public/dologin.html
+[运行时间：0.064004s] [吞吐率：15.62req/s] [内存消耗：672.10kb] [文件加载：88]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'content-length' => '66',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://192.168.19.50',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://192.168.19.50/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=sqpihqo6r45708o9sshphuiv4s',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => 'rcsr',
+  '_captcha_id' => '',
+  'redirect' => '',
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=tc;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `user_login` = 'admin' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_user',
+  'partitions' => NULL,
+  'type' => 'ref',
+  'possible_keys' => 'user_login',
+  'key' => 'user_login',
+  'key_len' => '242',
+  'ref' => 'const',
+  'rows' => 1,
+  'filtered' => 100.0,
+  'extra' => NULL,
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `b` ON `a`.`role_id`=`b`.`id` WHERE  `user_id` = 1  AND `status` = '1' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'a',
+  'partitions' => NULL,
+  'type' => 'ref',
+  'possible_keys' => 'role_id,user_id',
+  'key' => 'user_id',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'filtered' => 100.0,
+  'extra' => NULL,
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `user_id` = 1  AND `device_type` = 'web' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_user_token',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 1,
+  'filtered' => 100.0,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] UPDATE `cmf_user`  SET `user_type` = 1 , `sex` = 0 , `birthday` = 0 , `last_login_time` = 1557049403 , `score` = 0 , `coin` = 0 , `balance` = 0 , `create_time` = 1554168106 , `user_status` = 1 , `user_login` = 'admin' , `user_pass` = '###b493138f355024e4ae05bb0607caa316' , `user_nickname` = 'admin' , `user_email` = '3450817337@qq.com' , `user_url` = '' , `avatar` = '' , `signature` = '' , `last_login_ip` = '192.168.19.50' , `user_activation_key` = '' , `mobile` = '' , `more` = NULL  WHERE  `id` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2019-05-05T17:43:25+08:00] 192.168.19.50 GET 192.168.19.50/admin/index/index.html
+[运行时间：0.192011s] [吞吐率：5.21req/s] [内存消耗：1,044.13kb] [文件加载：100]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://192.168.19.50/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=sqpihqo6r45708o9sshphuiv4s; admin_username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn/admin_menu.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\webs\tc.com\public/themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+  2 => 'menus_js_var',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=tc;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_plugin',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_user',
+  'partitions' => NULL,
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'filtered' => 100.0,
+  'extra' => NULL,
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_admin_menu` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_admin_menu',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 148,
+  'filtered' => 100.0,
+  'extra' => 'Using filesort',
+) ]
+[ warn ] SQL:SELECT * FROM `cmf_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC [Using filesort]
+---------------------------------------------------------------
+[2019-05-05T17:43:26+08:00] 192.168.19.50 GET 192.168.19.50/admin/main/index.html
+[运行时间：0.275016s] [吞吐率：3.64req/s] [内存消耗：828.34kb] [文件加载：96]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://192.168.19.50/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=sqpihqo6r45708o9sshphuiv4s; admin_username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn/admin_menu.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\webs\tc.com\public/plugins/system_info/view/widget.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ VIEW ] D:\webs\tc.com\public/themes/admin_simpleboot3/admin\main\index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;port=3306;dbname=tc;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_plugin',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_user',
+  'partitions' => NULL,
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'filtered' => 100.0,
+  'extra' => NULL,
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'partitions' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'filtered' => NULL,
+  'extra' => 'no matching row in const table',
+) ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_plugin',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] select VERSION() as version [ RunTime:0.000000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'partitions' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'filtered' => NULL,
+  'extra' => 'No tables used',
+) ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'partitions' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'filtered' => NULL,
+  'extra' => 'no matching row in const table',
+) ]

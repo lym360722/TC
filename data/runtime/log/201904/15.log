@@ -1,0 +1,46 @@
+---------------------------------------------------------------
+[2019-04-15T14:43:29+08:00] 192.168.19.50 GET 192.168.19.50/favicon.ico
+[运行时间：0.625036s] [吞吐率：1.60req/s] [内存消耗：734.70kb] [文件加载：75]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.19.50/Portal/Index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
+---------------------------------------------------------------
+[2019-04-15T18:04:12+08:00] 192.168.19.50 GET 192.168.19.50/favicon.ico
+[运行时间：0.361021s] [吞吐率：2.77req/s] [内存消耗：465.40kb] [文件加载：75]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.19.50/Portal/Index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php

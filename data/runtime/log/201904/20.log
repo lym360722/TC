@@ -1,0 +1,106 @@
+---------------------------------------------------------------
+[2019-04-20T09:20:37+08:00] 192.168.19.50 GET 192.168.19.50/admin/index/index.html
+[运行时间：2.189126s] [吞吐率：0.46req/s] [内存消耗：1,442.81kb] [文件加载：100]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://192.168.19.50/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=fl25oivehqqn9b62sm8bnuv23r; admin_username=admin; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn/admin_menu.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\webs\tc.com\public/themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+  2 => 'menus_js_var',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099006s ] mysql:host=127.0.0.1;port=3306;dbname=tc;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_plugin',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 6,
+  'filtered' => 16.666667938232422,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_user',
+  'partitions' => NULL,
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'filtered' => 100.0,
+  'extra' => NULL,
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_admin_menu` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC [ RunTime:0.004000s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_admin_menu',
+  'partitions' => NULL,
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 148,
+  'filtered' => 100.0,
+  'extra' => 'Using filesort',
+) ]
+[ warn ] SQL:SELECT * FROM `cmf_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC [Using filesort]
+---------------------------------------------------------------
+[2019-04-20T09:20:38+08:00] 192.168.19.50 GET 192.168.19.50/favicon.ico
+[运行时间：0.137007s] [吞吐率：7.30req/s] [内存消耗：467.45kb] [文件加载：75]
+[ info ] [ LANG ] D:\webs\tc.com/vendor\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.19.50',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.19.50/Portal/News',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fl25oivehqqn9b62sm8bnuv23r; admin_username=admin; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\webs\tc.com\vendor\thinkcmf\cmf\src\behavior/../lang\zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] D:\webs\tc.com\vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ LANG ] D:\webs\tc.com/app/portal\lang\zh-cn\common.php
